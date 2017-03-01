@@ -32,7 +32,7 @@ function aulaJs() {
     nome = "Luiz";
     nome += " Henrique";
     
-    document.getElementById('teste').innerHTML=nome+ " ," +idade+ " anos , media " +media;    
+    document.getElementById('teste').innerHTML = nome+ " ," +idade+ " anos , media " +media+ "<br>" +Date();    
 }
 
 function calculadora() {
@@ -133,7 +133,19 @@ function listarArray() {
 ///////// TYPE OF ///////
 function tipoDe() {
     var x = 123;
-    document.getElementById("teste").innerHTML = x.toString() + "<br>" + (123).toString() + "<br>" + (100 + 23).toString();
+    
+    document.getElementById("teste").innerHTML = 
+        x.toString() + "<br>" + (123).toString() + "<br>" + (100 + 23).toString() + "<br>" +
+        typeof "john" + "<br>" +
+        typeof 3.14 + "<br>" +
+        typeof NaN + "<br>" +
+        typeof false + "<br>" +
+        typeof [1,2,3,4] + "<br>" +
+        typeof {name:'john', age:34} + "<br>" +
+        typeof new Date() + "<br>" +
+        typeof function () {} + "<br>" +
+        typeof myCar + "<br>" +
+        typeof null;
 }
 
 //////////// JSON ////////////
