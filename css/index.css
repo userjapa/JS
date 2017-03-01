@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    font-family: monospace;
+    background-color: cadetblue;
+}
+
+button {
+    background-color: darkkhaki;
+    border: 2px dotted black;
+    width: 125px;
+    height 25px;
+    font-family: monospace;
+    margin: 2px;
+}
+
+button:hover {
+    background-color: forestgreen;
+}
+
